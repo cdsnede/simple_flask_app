@@ -1,0 +1,12 @@
+<p style="font-size:30px">Here are some fast food restaurants near {{ loc }}</p>
+<ol>
+{% for chain in chains_list %}
+    <li> {{ chain }} </li>
+{% endfor %}
+</ol>
+<br>
+<p>Enter the NUMBER of the restaurant you'd like to see healthy menu items for:</p>
+<form action="http://localhost:5000/menuitems" method="GET">
+<input type="number" name="num">
+<input type="submit" value="Submit">
+</form>

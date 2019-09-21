@@ -1,0 +1,14 @@
+<h1>Bon Appetit!</h1>
+<h4>Here are your menu items at {{ place }} <br>with less than 800 calories and less than 100 carbs:</h4>
+<br>
+<ul>
+{% for item in menu_items_list %}
+    <li> {{ item }} </li>
+    {% if item.photourl[-4:] != "aspx" %}
+        <img src="{{ item.photourl }}">
+    {% else %}
+        <p> No image available </p>
+	  {% endif %}
+{% endfor %}
+</ul>
+<p><a href="http://127.0.0.1:5000/">Start a new search!</a> (or hit the back button)</p>
