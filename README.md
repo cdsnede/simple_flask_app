@@ -5,6 +5,8 @@
 3. Choose one restaurant from the list.
 4. See up to 10 menu items at that restaurant that are all under 800 calories and less than 100 carbs.
 
+I made this for a class project.
+
 ## Sample Output
 Example output of restaurant choices for "48313":
 
@@ -49,25 +51,6 @@ Run this command for the test suite
 ```python
 python3 tests.py
 ```
-
-## Final Project Requirements Fulfilled
-The following is the list of requirements from our instructions document that my program fulfilled:
-
-  - Your project must rely on Python programming/program(s).
-  - Two data sources used in total: I used 2 APIs (Google Places and Spoonacular), based on user input.
-  - Caching must be implemented: All API calls are cached.
-  - Process data from each source: All json data from the APIs is parsed so that it can be turned into class instances.
-  - Import and use functionality from at least one Python module that is not json, random, or requests: I used requests_cache and unittest
-  - A test suite file containing at least 2 unittest.TestSuite subclasses and at least 10 test methods: My test file is tests.py and has 4 subclasses and 13 test methods.
-  - Running the project should produce a product that is the result of processing data: It produces html pages with Flask.
-  - Define at least 2 classes and create and use instance(s) of each of them: I made a Restaurant class and MenuItem class, which are used in other functions. The attributes of these instances are also used on the HTML pages to show names, addresses and images.
-  - Include in your repository an example of your output: See above. Or the .png files in this repository.
-  - Errors must be handled gracefully IF there is user input: I made html error pages if the user types in bad input or if there are no results. Also I made the input boxes check for non-numbers before the user hits the submit button.
-  - Using a library in Python that we did not study in SI 508 or use in any assignment: requests_cache
-  - Accessing a REST API that we have not included in any meeting or assignment: Spoonacular (which gets the menu items)
-  - A clear visualization of data: HTML pages served in a Flask application
-  - An interactive project: The results are all user-driven, like in Project 2
-
 
 ## Sources used
   - https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation
